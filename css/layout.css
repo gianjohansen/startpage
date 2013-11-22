@@ -1,0 +1,190 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Meyer Reset
+	#Site Styles
+	#Media Queries */
+
+/* #Meyer Reset
+   source: http://meyerweb.com/eric/tools/css/reset/
+================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: Roboto, Lato, Raleway, sans-serif;
+	font-weight: 300;
+	background-color: #fafafa;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* #Site Styles
+================================================== */
+
+/* 
+    vertical center by ghost element
+    source: http://css-tricks.com/centering-in-the-unknown/ 
+*/
+.page-center {
+  text-align: center;
+}
+.page-center:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.centered h1 {
+	font-size: 16px;
+	color: #31ADED;
+	font-weight: 400;
+}
+.centered #clock {
+	font-size: 60px;
+	color: #31ADED;
+	font-weight: 100;
+	margin-bottom: 60px;
+	cursor: default;
+}
+
+/*
+    jquery simpleWeather plugin
+    source: http://simpleweatherjs.com/
+*/
+#weather {
+	text-align: right;
+	border-right: 1px solid #78CEFA;
+	padding-right: 24px;
+	line-height: 1.4;
+	cursor: default;
+}
+#weather h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 150px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+#weather #tomorrow {
+	margin-top: 28px;
+}
+
+/* 
+    link menus
+*/
+.links { 
+	line-height: 1.4;
+}
+
+.links h1 {
+	cursor: default;
+}
+
+.links li {
+	line-height: 1.5;
+}
+
+.links a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+	color: #777;
+	font-size: 16px;
+	font-weight: 300;
+}
+.links a:hover {
+	color: #31ADED;
+}
+
+#quote {
+	color: #777;
+	cursor: default;
+	line-height: 1.4;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		.weather-container {
+			width: 100% !important;
+		}
+		#weather {
+			text-align: center;
+			border-right: none;
+			padding-right: 0;
+			margin-bottom: 60px;
+		}
+		.links {
+			width: 33% !important;
+			margin-bottom: 24px !important;
+		}
+		#quote {
+			display: none;
+		}
+
+	}
