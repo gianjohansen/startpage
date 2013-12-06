@@ -76,37 +76,21 @@ html, body {
 
 /* #Site Styles
 ================================================== */
-
-/* 
-    vertical center by ghost element
-    source: http://css-tricks.com/centering-in-the-unknown/ 
-*/
-.page-center {
-  text-align: center;
+#startpage {
+	text-align: center;
 }
-.page-center:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
-}
-.centered {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-}
-.centered h1 {
+#startpage h1 {
 	font-size: 16px;
 	color: #31ADED;
 	font-weight: 400;
 }
-.centered #clock {
+#startpage #clock {
 	font-size: 60px;
 	color: #31ADED;
 	font-weight: 100;
 	margin-bottom: 60px;
 	cursor: default;
+	text-align: center;
 }
 
 /*

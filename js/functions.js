@@ -19,7 +19,7 @@ $(document).ready(function () {
             html += '<li>' + weather.tomorrow.highAlt + '&deg;C</li></ul>';
 
             $("#weather").html(html);
-            $(".centered").fadeIn(400);
+            $("#startpage").fadeIn(400);
         },
         error: function (error) {
             $("#weather").html('<p>' + error + '</p>');
@@ -44,3 +44,14 @@ function checkTime(i) {
     }
     return i;
 }
+
+$(window).resize(function(){
+
+    $('#startpage').css({
+        position:'absolute',
+        left: ($(window).width() - $('#startpage').outerWidth())/2,
+        top: ($(window).height() - $('#startpage').outerHeight())/2
+    });
+
+});
+$(window).resize();
